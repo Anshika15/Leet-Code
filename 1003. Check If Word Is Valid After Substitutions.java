@@ -7,12 +7,11 @@ class Solution {
         {
             if(ch == 'c')
             {
-                if(stack.isEmpty())
+                if(stack.isEmpty() || stack.pop() != 'b')
                     return false;
-                if(stack.pop() != 'b')
+                if(stack.isEmpty() || stack.pop() != 'a')
                     return false;
-                if(stack.pop() != 'a')
-                    return false;
+                
             }
             else
             {
